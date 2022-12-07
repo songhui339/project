@@ -4,12 +4,6 @@ projectPage CSS
 ====================================================
 */
 
-/* 반응형 작업을 위한 PC용 SECTION 숨김처리 */
-@media screen and (max-width: 980px) {
-    header, .projectSection, footer {
-        display: none;
-    }
-}
 
 .projectSection {
     background-color: rgb(244, 244, 250);
@@ -106,4 +100,42 @@ projectPage CSS
     margin-bottom: 0;
     width: 50px;
     cursor: pointer;
+}
+
+.mobileReady {
+    display: none;
+}
+
+/* 반응형 작업을 위한 PC용 SECTION 숨김처리 */
+@media screen and (max-width: 980px) {
+    header, .projectSection, footer {
+        display: none;
+    }
+
+    .mobileReady {
+        display: block;
+        height: 100vh;
+        background-color: rgb(244, 244, 250);
+        text-align: center;
+    }
+
+    .mobileReady .textBox {
+        padding-top: 50%;
+    }
+
+    .mobileReady .textBox img {
+        width: 50%;
+    }
+
+    .mobileReady .textBox h2 {
+        font-size: 2rem;
+        line-height: 1.5;
+        font-weight: 600;
+        color: #7e69fe;
+    }
+
+    .mobileReady .textBox p {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
 }
